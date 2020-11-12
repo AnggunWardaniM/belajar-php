@@ -12,14 +12,13 @@ $siswa = query ("SELECT * FROM siswa");
 	<table border="1" cellpadding="10" cellspacing="0">
 		<tr>
 			<td>Nama </td>
-            <td>NIS </td>
+			<td>NIS </td>
             <td>PASSWORD </td>
 		</tr>
 		<?php foreach ($siswa as $row) :?>
 		<tr>
 			<td><?= $row["nama"]?></td>
-            <td><?= $row["nis"]?></td>
-            <td><?= $row["password"]?></td>
+			<td><?= $row["nis"]?></td>
 		</tr>
 		<?php endforeach; ?>
 	</table>
